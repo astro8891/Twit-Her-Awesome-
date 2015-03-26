@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using System.Security.AccessControl;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -29,5 +30,10 @@ namespace SharpieTwitHer.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Tweet> Tweets { get; set; }
+            
+
+
     }
 }
