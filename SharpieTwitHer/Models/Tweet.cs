@@ -25,13 +25,13 @@ namespace SharpieTwitHer.Models
         }
     }
 }
-using System.Text;
+//using System.Text;
 
-namespace SharpieTwitHer.Models
-{
-    public class Tweet
-    {
-        public int ID { get; set; }
-        public string Body { get; set; }
-    }
-}
+//namespace SharpieTwitHer.Models
+//{
+//    public class Tweet
+//    {
+//        public int ID { get; set; }
+//        public string Body { get; set; }
+//    }
+//}
