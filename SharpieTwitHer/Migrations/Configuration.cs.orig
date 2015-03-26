@@ -10,7 +10,10 @@ namespace SharpieTwitHer.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+<<<<<<< HEAD
             ContextKey = "SharpieTwitHer.Models.ApplicationDbContext";
+=======
+>>>>>>> origin
         }
 
         protected override void Seed(SharpieTwitHer.Models.ApplicationDbContext context)
