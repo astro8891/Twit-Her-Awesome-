@@ -173,20 +173,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Tweets1Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503260209557_create_database.cs" />
-    <Compile Include="Migrations\201503260209557_create_database.Designer.cs">
-      <DependentUpon>201503260209557_create_database.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201503252153016_InitialCreate.cs" />
-    <Compile Include="Migrations\201503252153016_InitialCreate.Designer.cs">
-      <DependentUpon>201503252153016_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201503260209287_addedtweetstouser.cs" />
-    <Compile Include="Migrations\201503260209287_addedtweetstouser.Designer.cs">
-      <DependentUpon>201503260209287_addedtweetstouser.cs</DependentUpon>
+    <Compile Include="Migrations\201503270158458_Added_Tweet_Limit.cs" />
+    <Compile Include="Migrations\201503270158458_Added_Tweet_Limit.Designer.cs">
+      <DependentUpon>201503270158458_Added_Tweet_Limit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -252,6 +245,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Tweets1\Create.cshtml" />
+    <Content Include="Views\Tweets1\Delete.cshtml" />
+    <Content Include="Views\Tweets1\Details.cshtml" />
+    <Content Include="Views\Tweets1\Edit.cshtml" />
+    <Content Include="Views\Tweets1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -264,14 +262,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503260209557_create_database.resx">
-      <DependentUpon>201503260209557_create_database.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503252153016_InitialCreate.resx">
-      <DependentUpon>201503252153016_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503260209287_addedtweetstouser.resx">
-      <DependentUpon>201503260209287_addedtweetstouser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503270158458_Added_Tweet_Limit.resx">
+      <DependentUpon>201503270158458_Added_Tweet_Limit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
