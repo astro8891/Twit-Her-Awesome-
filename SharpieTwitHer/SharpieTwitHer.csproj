@@ -177,9 +177,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503270158458_Added_Tweet_Limit.cs" />
-    <Compile Include="Migrations\201503270158458_Added_Tweet_Limit.Designer.cs">
-      <DependentUpon>201503270158458_Added_Tweet_Limit.cs</DependentUpon>
+    <Compile Include="Migrations\201503260209557_create_database.cs" />
+    <Compile Include="Migrations\201503260209557_create_database.Designer.cs">
+      <DependentUpon>201503260209557_create_database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503252153016_InitialCreate.cs" />
+    <Compile Include="Migrations\201503252153016_InitialCreate.Designer.cs">
+      <DependentUpon>201503252153016_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503260209287_addedtweetstouser.cs" />
+    <Compile Include="Migrations\201503260209287_addedtweetstouser.Designer.cs">
+      <DependentUpon>201503260209287_addedtweetstouser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503270140093_happytimes.cs" />
+    <Compile Include="Migrations\201503270140093_happytimes.Designer.cs">
+      <DependentUpon>201503270140093_happytimes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -262,8 +274,17 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503270158458_Added_Tweet_Limit.resx">
-      <DependentUpon>201503270158458_Added_Tweet_Limit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201503260209557_create_database.resx">
+      <DependentUpon>201503260209557_create_database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503252153016_InitialCreate.resx">
+      <DependentUpon>201503252153016_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503260209287_addedtweetstouser.resx">
+      <DependentUpon>201503260209287_addedtweetstouser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503270140093_happytimes.resx">
+      <DependentUpon>201503270140093_happytimes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

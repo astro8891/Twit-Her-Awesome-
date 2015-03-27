@@ -1,26 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-<<<<<<< HEAD
-using System.Text;
-=======
 using System.Web;
->>>>>>> origin
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace SharpieTwitHer.Models
 {
     public class Tweet
     {
-<<<<<<< HEAD
-        public int ID { get; set; }
-        public string Body { get; set; }
-    }
-}
-=======
         
         public int ID { get; set; }
+<<<<<<< HEAD
         public string UserId { get; set; }
+        public string TweetContent { get; set; }
+=======
+        public virtual ApplicationUser User { get; set; }
         public string  TweetContent { get; set; }
+>>>>>>> ef49a89f93336c05925b38d2e41be61e5d8e5834
         public DateTime CreatedAt { get; set; }
 
         public Tweet(string content)
@@ -29,10 +25,25 @@ namespace SharpieTwitHer.Models
             CreatedAt = DateTime.Now;
         }
 
-        public Tweet()
+        public string TweetLimit(string tweetie)
         {
-        
+            var tweetlength = tweetie.Length;
+            if (tweetlength>140)
+            {
+                throw new Exception("Your tweet is limited to 140 characters");
+            }
+            return tweetie;
+
         }
     }
 }
->>>>>>> origin
+//using System.Text;
+
+//namespace SharpieTwitHer.Models
+//{
+//    public class Tweet
+//    {
+//        public int ID { get; set; }
+//        public string Body { get; set; }
+//    }
+//}
