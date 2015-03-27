@@ -7,13 +7,13 @@ namespace SharpieTwitHer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class create_database : IMigrationMetadata
+    public sealed partial class happytimes : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(create_database));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(happytimes));
         
         string IMigrationMetadata.Id
         {
-            get { return "201503260209557_create_database"; }
+            get { return "201503270140093_happytimes"; }
         }
         
         string IMigrationMetadata.Source
