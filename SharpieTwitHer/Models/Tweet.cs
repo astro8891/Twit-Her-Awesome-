@@ -10,7 +10,7 @@ namespace SharpieTwitHer.Models
         
         public int ID { get; set; }
         public string UserId { get; set; }
-        public string  TweetContent { get; set; }
+        public string TweetContent { get; set; }
         public DateTime CreatedAt { get; set; }
 
         public Tweet(string content)
@@ -19,9 +19,15 @@ namespace SharpieTwitHer.Models
             CreatedAt = DateTime.Now;
         }
 
-        public Tweet()
+        public string TweetLimit(string tweetie)
         {
-        
+            var tweetlength = tweetie.Length;
+            if (tweetlength>140)
+            {
+                throw new Exception("Your tweet is limited to 140 characters");
+            }
+            return tweetie;
+
         }
     }
 }
